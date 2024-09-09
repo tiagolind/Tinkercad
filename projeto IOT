@@ -1,0 +1,32 @@
+int luz = 4;
+int luz1 = 3;
+ 
+  void setup()
+{
+  pinMode(luz, OUTPUT);
+  pinMode(luz1, OUTPUT);
+  }
+
+void loop()
+{
+
+  if (digitalRead(2) == HIGH)
+    {
+      digitalWrite(luz, HIGH);
+    }
+  
+  if (digitalRead (2) == LOW)
+  {
+    digitalWrite (luz,LOW);
+  }
+  
+  if (digitalRead (2) == LOW)
+  {
+    digitalWrite (luz1,HIGH);
+  }
+  
+  if(digitalRead(2) == HIGH)
+  {
+    digitalWrite(luz1,LOW);
+  }
+}
